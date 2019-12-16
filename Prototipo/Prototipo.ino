@@ -2,11 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "JIDY";
-const char* password =  "@Edu232624";
-
-const char* ssid1 = "Moto G5";
-const char* password1 =  "jadielsantana";
+const char* ssid = "nome da rede";
+const char* password =  "senha";
 
 const char* mqttServer = "tailor.cloudmqtt.com";
 const int mqttPort = 16607;
@@ -45,7 +42,7 @@ void setup()
  
   Serial.begin(115200);
  
-  WiFi.begin(ssid1, password1);
+  WiFi.begin(ssid, password);
  
   while (WiFi.status() != WL_CONNECTED) 
   {   
