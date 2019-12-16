@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/txt_numero_vaga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero_da_vaga"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_numero_vaga">
+
+        <TextView
+            android:id="@+id/txt_motorista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTextSecond"
+            android:text="@string/motorista"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@id/txt_numero_vaga"/>
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/status"
+            android:ellipsize="end"
+            android:textColor="@color/colorTextSecond"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
